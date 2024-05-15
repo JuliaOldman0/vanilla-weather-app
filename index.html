@@ -10,7 +10,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    
     <title>Vanilla Weather App</title>
   </head>
   <body>
@@ -34,11 +37,13 @@
             <p class="weather-app-details">
               <span id="time"></span>, <span id="description"></span>
               <br />
-              Humidity: <strong id="humidity"></strong>, Wind: <strong id="speed"></strong>
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="speed"></strong>
             </p>
           </div>
           <div class="weather-app-temperature-container">
-            <div class="weather-app-icon">🌤️</div>
+            <div id="icon" class="icon">
+            </div>
             <div class="weather-app-temperature" id="temperature"></div>
             <div class="weather-app-unit">°C</div>
           </div>
